@@ -887,3 +887,12 @@ main, .site-footer { overflow-x: clip; }
 
 /* the eyebrow now lives inside the h1 (keywords for search); keep it looking like the small label */
 .hero h1 .eyebrow { display: block; line-height: 1.4; letter-spacing: .1em; font-family: var(--font, system-ui); }
+
+/* privacy policy: a readable single column */
+.legal-wrap { max-width: 720px; }
+.legal h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); letter-spacing: -.03em; margin: 12px 0 6px; }
+.legal-date { margin: 0 0 32px; color: var(--slate); font-size: .9rem; }
+.legal h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 36px 0 10px; }
+.legal p, .legal li { line-height: 1.7; color: var(--ink-2, var(--slate)); }
+.legal ul { padding-left: 1.2em; display: grid; gap: 8px; }
+.legal a { color: var(--accent); }
