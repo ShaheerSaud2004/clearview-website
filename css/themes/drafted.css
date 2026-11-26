@@ -896,3 +896,7 @@ main, .site-footer { overflow-x: clip; }
 .legal p, .legal li { line-height: 1.7; color: var(--ink-2, var(--slate)); }
 .legal ul { padding-left: 1.2em; display: grid; gap: 8px; }
 .legal a { color: var(--accent); }
+
+/* footer: small agency credit */
+.footer-bottom .credit a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,.25); }
+.footer-bottom .credit a:hover { color: #fff; }
