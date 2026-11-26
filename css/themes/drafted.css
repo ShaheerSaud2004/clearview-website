@@ -1,7 +1,7 @@
 /* DRAFTED — Atelier's dark architectural hero (tab nav, stats, giant wordmark, intro) with the
    Porch house drawing sketching itself below the wordmark instead of a photo.
    Everything below the hero follows Atelier. */
-@import url("atelier.css?v=64");
+@import url("atelier.css?v=65");
 
 /* colour tokens (the default "Blueprint" palette); other palettes below */
 :root {
@@ -879,10 +879,11 @@ main, .site-footer { overflow-x: clip; }
 .book-alt { margin: 0; font-size: .88rem; color: var(--slate); }
 
 /* contact: booking box sized to the screen, one section instead of two */
-.book { max-width: 980px; margin-inline: auto; margin-bottom: 36px; }
-.book-frame iframe { height: min(76vh, 700px); min-height: 560px; }
-@media (max-width: 700px) { .book-frame iframe { height: min(80vh, 760px); min-height: 600px; } }
-.contact-strip { max-width: 980px; margin-inline: auto; display: grid; gap: 14px; padding-top: 28px; border-top: 1px solid var(--line); }
+.book { margin-bottom: 36px; }
+.contact-strip { display: grid; gap: 14px; padding-top: 28px; border-top: 1px solid var(--line); }
 .contact-strip-title { margin: 0; font-size: 1.05rem; font-weight: 500; }
 .contact-strip .contact-methods { display: grid; gap: 12px; margin: 0; }
 @media (min-width: 760px) { .contact-strip .contact-methods { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* the eyebrow now lives inside the h1 (keywords for search); keep it looking like the small label */
+.hero h1 .eyebrow { display: block; line-height: 1.4; letter-spacing: .1em; font-family: var(--font, system-ui); }
