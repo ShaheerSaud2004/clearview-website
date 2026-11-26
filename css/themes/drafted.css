@@ -1,7 +1,7 @@
 /* DRAFTED — Atelier's dark architectural hero (tab nav, stats, giant wordmark, intro) with the
    Porch house drawing sketching itself below the wordmark instead of a photo.
    Everything below the hero follows Atelier. */
-@import url("atelier.css?v=62");
+@import url("atelier.css?v=63");
 
 /* colour tokens (the default "Blueprint" palette); other palettes below */
 :root {
@@ -868,3 +868,12 @@ main, .site-footer { overflow-x: clip; }
   #about .inspector-col .cred-grid { order: 6; grid-template-columns: 1fr 1fr; column-gap: 20px; }
 }
 @media (max-width: 480px) { #about .inspector-col .cred-grid { grid-template-columns: 1fr; } }
+
+/* contact: Spectora booking form embedded above the quote form */
+.book { display: grid; gap: 22px; margin-bottom: clamp(48px, 7vw, 88px); }
+.book-head { max-width: 640px; }
+.book-head h2 { margin: 10px 0 12px; }
+.book-frame { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 20px 50px -30px rgba(0,0,0,.35); }
+.book-frame iframe { display: block; width: 100%; height: 1100px; border: 0; }
+@media (max-width: 700px) { .book-frame { border-radius: 12px; margin-inline: -4px; } .book-frame iframe { height: 1250px; } }
+.book-alt { margin: 0; font-size: .88rem; color: var(--slate); }

@@ -12,7 +12,7 @@ window.CLEARVIEW = {
   // Spectora online scheduler link.
   // In Spectora: Settings → Online Scheduler → copy your scheduler URL.
   // Every "Schedule an Inspection" button uses this. Empty = buttons scroll to the contact form.
-  scheduleUrl: "",
+  scheduleUrl: "https://app.spectora.com/home-inspectors/my-inspection-company-a519c0d06f/schedule",
 
   // Link to a sample report (a Spectora sample report link or a PDF in /assets).
   sampleReportUrl: "",

@@ -17,12 +17,12 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=62">
-  <link rel="stylesheet" href="css/themes/drafted.css?v=62" id="theme-css">
+  <link rel="stylesheet" href="css/styles.css?v=63">
+  <link rel="stylesheet" href="css/themes/drafted.css?v=63" id="theme-css">
   <script>
     /* Theme loader: Drafted is the only style. */
     (function () {
-      var DEFAULT = "drafted", V = "62";
+      var DEFAULT = "drafted", V = "63";
       var FONTS = {
         drafted: "family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400&family=Manrope:wght@600"
       };
@@ -85,7 +85,7 @@
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="#contact" data-schedule>Schedule Inspection</a>
+        <a class="btn btn-primary nav-cta" href="#book" data-schedule>Schedule Inspection</a>
       </nav>
 
       <a class="header-phone" href="#" data-tel data-phone></a>
@@ -107,7 +107,7 @@
           <h1><em>Know</em> What You're Buying.</h1>
           <p class="lead">Professional home and commercial inspections with clear findings, straightforward explanations, and detailed reports throughout New Jersey.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="#contact" data-schedule>Schedule an Inspection</a>
+            <a class="btn btn-primary" href="#book" data-schedule>Schedule an Inspection</a>
             <a class="btn btn-outline" href="#contact">Request a Quote</a>
           </div>
           <p class="hero-call">Prefer to talk? Call or text <a href="#" data-tel data-phone></a></p>
@@ -679,7 +679,7 @@
           </details>
           <details>
             <summary>How do I schedule?</summary>
-            <p>Click <a href="#contact" data-schedule>Schedule an Inspection</a> to book online, or call or text <a href="#" data-tel data-phone></a>. Scheduling, the inspection agreement and payment are all handled online.</p>
+            <p>Click <a href="#book" data-schedule>Schedule an Inspection</a> to book online, or call or text <a href="#" data-tel data-phone></a>. Scheduling, the inspection agreement and payment are all handled online.</p>
           </details>
           <details>
             <summary>How much does an inspection cost?</summary>
@@ -695,7 +695,7 @@
         <h2><em>Get</em> a ClearView <em>before</em> you make your decision.</h2>
         <p>Book online in a few minutes, or reach out with any questions.</p>
         <div class="btn-row">
-          <a class="btn btn-light" href="#contact" data-schedule>Schedule an Inspection</a>
+          <a class="btn btn-light" href="#book" data-schedule>Schedule an Inspection</a>
           <a class="btn btn-ghost-light" href="#contact">Request a Quote</a>
         </div>
         <a class="cta-phone" href="#" data-tel data-phone></a>
@@ -704,6 +704,17 @@
 
     <!-- CONTACT / QUOTE -->
     <section class="section" id="contact">
+      <div class="container book" id="book">
+        <div class="book-head">
+          <span class="eyebrow">Book online</span>
+          <h2>Schedule your <em>inspection.</em></h2>
+          <p class="lead">Pick the service, date and time that work for you. You'll get a confirmation by email right away.</p>
+        </div>
+        <div class="book-frame">
+          <iframe src="https://app.spectora.com/home-inspectors/my-inspection-company-a519c0d06f/schedule?iframe=1" title="Schedule an inspection with ClearView Property Inspections" loading="lazy"></iframe>
+        </div>
+        <p class="book-alt">Trouble loading? <a href="https://app.spectora.com/home-inspectors/my-inspection-company-a519c0d06f/schedule" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
+      </div>
       <div class="container contact-grid">
         <div>
           <span class="eyebrow">Contact</span>
@@ -757,7 +768,7 @@
           <div class="hp" aria-hidden="true"><label for="q-web">Website</label><input id="q-web" name="company_website" tabindex="-1" autocomplete="off"></div>
           <button class="btn btn-primary" type="submit">Request My Quote</button>
           <p class="form-status" role="status" hidden></p>
-          <p class="form-note">Ready to book now? <a href="#contact" data-schedule>Schedule online</a> instead.</p>
+          <p class="form-note">Ready to book now? <a href="#book" data-schedule>Schedule online</a> instead.</p>
         </form>
       </div>
     </section>
@@ -804,10 +815,10 @@
   <nav class="mobile-bar" aria-label="Quick actions">
     <a href="#" data-tel><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Call</a>
     <a href="#" data-sms><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/></svg>Text</a>
-    <a class="primary" href="#contact" data-schedule><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Schedule</a>
+    <a class="primary" href="#book" data-schedule><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Schedule</a>
   </nav>
 
-  <script src="js/config.js?v=62"></script>
-  <script src="js/main.js?v=62"></script>
+  <script src="js/config.js?v=63"></script>
+  <script src="js/main.js?v=63"></script>
 </body>
 </html>

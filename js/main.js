@@ -29,8 +29,9 @@
   });
 
   // Schedule buttons → Spectora (falls back to the contact form until the link is set)
-  if (cfg.scheduleUrl) {
-    $$("[data-schedule]").forEach(function (el) { el.href = cfg.scheduleUrl; });
+  // (they jump to the booking form embedded on the homepage; pages without it link to Spectora directly)
+  if (cfg.scheduleUrl && !document.getElementById("book")) {
+    $$("[data-schedule]").forEach(function (el) { if (!/#book$/.test(el.getAttribute("href"))) el.href = cfg.scheduleUrl; });
   }
   if (cfg.sampleReportUrl) {
     $$("[data-sample-report]").forEach(function (el) {
