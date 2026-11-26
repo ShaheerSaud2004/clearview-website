@@ -17,12 +17,12 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=63">
-  <link rel="stylesheet" href="css/themes/drafted.css?v=63" id="theme-css">
+  <link rel="stylesheet" href="css/styles.css?v=64">
+  <link rel="stylesheet" href="css/themes/drafted.css?v=64" id="theme-css">
   <script>
     /* Theme loader: Drafted is the only style. */
     (function () {
-      var DEFAULT = "drafted", V = "63";
+      var DEFAULT = "drafted", V = "64";
       var FONTS = {
         drafted: "family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400&family=Manrope:wght@600"
       };
@@ -706,21 +706,18 @@
     <section class="section" id="contact">
       <div class="container book" id="book">
         <div class="book-head">
-          <span class="eyebrow">Book online</span>
+          <span class="eyebrow">Contact</span>
           <h2>Schedule your <em>inspection.</em></h2>
-          <p class="lead">Pick the service, date and time that work for you. You'll get a confirmation by email right away.</p>
+          <p class="lead">Book online in a couple of minutes: pick the service, date and time that work for you and you'll get a confirmation by email right away.</p>
         </div>
         <div class="book-frame">
           <iframe src="https://app.spectora.com/home-inspectors/my-inspection-company-a519c0d06f/schedule?iframe=1" title="Schedule an inspection with ClearView Property Inspections" loading="lazy"></iframe>
         </div>
         <p class="book-alt">Trouble loading? <a href="https://app.spectora.com/home-inspectors/my-inspection-company-a519c0d06f/schedule" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
       </div>
-      <div class="container contact-grid">
-        <div>
-          <span class="eyebrow">Contact</span>
-          <h2>Get a <em>quote.</em></h2>
-          <p class="lead">Tell us a little about the property and we'll get back to you quickly with pricing and availability.</p>
-          <div class="contact-methods">
+      <div class="container contact-strip">
+        <p class="contact-strip-title">Prefer to talk first? Omer answers his own phone.</p>
+        <div class="contact-methods">
             <a class="contact-method" href="#" data-tel>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
               <span><small>Call</small><strong data-phone></strong></span>
@@ -734,42 +731,6 @@
               <span><small>Email</small><strong>Send us an email</strong></span>
             </a>
           </div>
-        </div>
-
-        <form class="form card" data-quote-form>
-          <div class="form-row">
-            <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required></div>
-            <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
-          </div>
-          <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="q-address">Property address</label><input id="q-address" name="property_address" autocomplete="street-address"></div>
-          <div class="form-row">
-            <div class="field">
-              <label for="q-service">Service</label>
-              <select id="q-service" name="service">
-                <option>Home Inspection</option>
-                <option>Commercial Inspection</option>
-                <option>Radon Testing</option>
-                <option>Oil Tank Sweep</option>
-                <option>Home Inspection + Radon</option>
-                <option>Not sure yet</option>
-                <!-- Add WDI here once offered -->
-              </select>
-            </div>
-            <div class="field">
-              <label for="q-role">I am a…</label>
-              <select id="q-role" name="client_type">
-                <option>Buyer</option><option>Seller</option><option>Homeowner</option><option>Real estate agent</option><option>Investor</option>
-              </select>
-            </div>
-          </div>
-          <div class="field"><label for="q-msg">Anything else? (square footage, year built, timing)</label><textarea id="q-msg" name="message"></textarea></div>
-          <!-- Spam honeypot: hidden from people, bots fill it in -->
-          <div class="hp" aria-hidden="true"><label for="q-web">Website</label><input id="q-web" name="company_website" tabindex="-1" autocomplete="off"></div>
-          <button class="btn btn-primary" type="submit">Request My Quote</button>
-          <p class="form-status" role="status" hidden></p>
-          <p class="form-note">Ready to book now? <a href="#book" data-schedule>Schedule online</a> instead.</p>
-        </form>
       </div>
     </section>
   </main>
@@ -818,7 +779,7 @@
     <a class="primary" href="#book" data-schedule><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Schedule</a>
   </nav>
 
-  <script src="js/config.js?v=63"></script>
-  <script src="js/main.js?v=63"></script>
+  <script src="js/config.js?v=64"></script>
+  <script src="js/main.js?v=64"></script>
 </body>
 </html>
