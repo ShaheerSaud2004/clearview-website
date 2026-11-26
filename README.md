@@ -28,7 +28,7 @@ Every photo slot currently shows an **example** stock photo from Unsplash (free 
 ## Still needed from the client
 
 - [ ] Real phone number and email → `js/config.js` (also the `telephone` line in each page's JSON-LD block)
-- [ ] Domain name → replace `clearviewpropertyinspections.com` in `<link rel="canonical">` / `og:url`
+- [x] Domain: clearviewpropertyinspectors.com (Namecheap, pointed at GitHub Pages)
 - [ ] Logo → `assets/logo.svg`, then replace the placeholder `<svg class="brand-mark">` in header/footer
 - [ ] Photos → each slot is a `<div class="ph" data-slot="...">`. Put an `<img src="assets/..." alt="...">` inside it and the placeholder look disappears. Slots: hero, inspector portrait, each service card, report screenshots, service-area map, inner-page photos
 - [ ] Inspector name, background, training, license # (About section + footer)

@@ -7,7 +7,7 @@ window.CLEARVIEW = {
   phoneDisplay: "(908) 319-1016",
   phoneDial: "+19083191016",
 
-  email: "info@clearviewpropertyinspections.com", // TODO: real email
+  email: "info@clearviewpropertyinspectors.com", // TODO: real email
 
   // Spectora online scheduler link.
   // In Spectora: Settings → Online Scheduler → copy your scheduler URL.
